@@ -1,0 +1,207 @@
+*{
+    
+    font-family: 'Smooch Sans', sans-serif;
+    
+    
+}
+html{
+    --textColour:white;
+    --border:1px solid #00ffffc9; 
+    --mainColour:#00FFFF;
+    background-image: url(./images/geometric.jpg);
+    background-size:cover;
+    min-width: 100%;
+    background-repeat: none;
+    
+}
+body{
+    min-height: 100%;
+    background-size: cover;
+    color: var(--textColour);
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.404);
+}
+header{
+    padding-left: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* position: sticky;
+    top:0;
+    z-index:100; */
+    border-bottom:  var(--border);
+}
+header h1{
+    display: inline-block;
+    position: relative;
+    color: var(--textColour);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 0 2px;
+}
+nav ul{
+
+    list-style-type: none;
+    display: inline-flex;
+    padding-right: 40rem;
+    list-style-type: none;
+    position: relative; 
+    padding-left: 80%;
+    
+    
+}
+nav a{
+    font-size: 20px;
+    color: var(--textColour);
+    margin: 0 8px;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    box-shadow: 2px 2px 3px black;
+
+}
+nav a:hover{
+    background-color: var(--mainColour);
+    color: var(--textColour);
+    transition-duration: 1s;
+
+}
+.about{
+   display: flex;
+   margin-bottom: 50px;
+   
+   
+}
+.work{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+.banner{
+    background-image: url(./images/space-background2.jpg);
+    background-size: 80%;
+    background-position-x: center;
+    background-position-y: center;
+    width: 100%;
+    height: 150px;
+   border-bottom: var(--border);
+
+
+}
+.about h2{
+position: absolute;
+padding-right:8rem;
+padding-left: 5rem;
+border-right: 5px solid ;
+padding-bottom: 5rem;
+color: var(--mainColour);
+}
+.work h2{
+    position: absolute;
+    padding-right:10rem;
+    padding-left: 5rem;
+    border-right: 5px solid ;
+    padding-bottom: 5rem;
+    color: var(--mainColour);
+}
+
+
+#about p{
+    display: flex;
+    padding-left:31%; 
+    width: 40.7rem;   
+}
+.projects{
+    display: inline-flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding-right: 10%;
+}
+.mainProject{
+    background-image: url(./images/space-background2.jpg);
+    background-size: cover;
+    background-repeat: none;
+    background-position-x: center;
+    background-position-y:60%;
+    margin: 0 auto;
+    margin-left: 34.4%;
+    width:40.7rem;
+    height: 8rem;
+    border: var(--border);
+    
+    
+}
+.otherProjects{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 15px;
+    margin-left: 34%;
+    
+}
+
+.otherProject1{
+    background-image: url(./images/3d-abstract-wave-pattern-background.jpg);
+    background-position-x: left ;
+    background-position-y: top;
+    background-size: 192%;
+    order: 1;
+    margin: 5px;
+    height: 100px;
+    width: 20rem;
+    border:var(--border);
+}
+.otherProject2{
+    background-image: url(./images/3d-abstract-wave-pattern-background.jpg);
+    background-position-x: right ;
+    background-size: 210%;
+    order: 2;
+    margin: 5px;
+    height: 100px;
+    width: 20rem;
+    border:var(--border);
+}
+.otherProject3{
+    order:3;
+    background-image: url(./images/3d-abstract-wave-pattern-background.jpg);
+    background-position-x: right ;
+    background-size: 150%;
+    height: 100px;
+    margin: 5px;
+    width: 20rem;
+    border:var(--border);
+}
+.otherProject4{
+    order: 4;
+    background-image: url(./images/3d-abstract-wave-pattern-background.jpg);
+    background-size: 100%;
+    background-position-x: right;
+    background-position-y: bottom;
+    margin: 5px;
+    height: 100px;
+    width: 20rem;
+    border:var(--border);
+}
+footer{
+    position: relative;
+    color: var(--mainColour);
+}
+footer h2{
+    border-bottom: var(--border);
+    padding-left: 40px;
+}
+footer ul {
+    text-align: center;
+}
+footer ul li{
+    display: inline-flex;
+    padding-left: 40px;
+    margin: 20px;
+    color: var(--textColour);
+    
+}
+
