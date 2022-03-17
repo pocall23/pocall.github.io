@@ -72,7 +72,7 @@ nav a{
 nav a:hover{
     background-color: var(--mainColour);
     color: rgb(136, 48, 48);
-    transition-duration: 0.1s;
+    transition-duration: 0.5s;
     text-decoration:none;
     
 
@@ -151,6 +151,15 @@ padding-bottom: 5rem;
     border: var(--border);
     box-shadow: var(--projectBoxShadow);   
 }
+.mainProject .header{
+    color: white;
+    padding-bottom: 6.85rem;
+}
+.mainProject .header :hover{
+background-color: var(--mainColour);
+color:rgb(136, 48, 48) ;
+
+}
 .mainProject :hover{
     background-color: var(--projectHover);
 }
@@ -159,10 +168,7 @@ padding-bottom: 5rem;
     flex-wrap: wrap;
     flex-direction: row;
     margin: 15px;
-    margin-left: 34%;
-    
-    
-    
+    margin-left: 34%;   
 }
 
 .otherProject1{
@@ -214,6 +220,12 @@ padding-bottom: 5rem;
     border:var(--border);
     box-shadow: var(--projectBoxShadow);
     border-radius: var(--borderRadius);
+}
+.otherProject3 .header{
+    margin-top: 5rem;
+}
+.otherProject4 .header{
+    margin-top: 5rem;
 }
 footer{
     position: relative;
