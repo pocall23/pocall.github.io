@@ -1,52 +1,57 @@
-*{
-    
-    font-family: 'Smooch Sans', sans-serif;
-    
-    
-}
+
+
 html{
+    --h2FontSize: 32px;
+    --mainColour:rgb(209, 209, 201);
+    --projectHover:rgba(182, 182, 148, 0.678);
+    --borderRadius: 5px;
+    --backgroundSize: cover;
     --textColour:white;
-    --border:1px solid #00ffffc9; 
-    --mainColour:#00FFFF;
-    background-image: url(./images/geometric.jpg);
+    --border:1px solid var(--mainColour); 
+    --projectBoxShadow: 1px 0.5px 5px 1px var(--mainColour);
+    --bodyFontSize: 20px;
+    /* background-image: url(./images/geometric.jpg); */
+    background-color: black;
     background-size:cover;
     min-width: 100%;
     background-repeat: none;
+    font-family: Arial, Helvetica, sans-serif;
     
 }
 body{
     min-height: 100%;
-    background-size: cover;
+    background-size: var(--backgroundSize);
     color: var(--textColour);
     margin: 0;
     padding: 0;
-    background-color: rgba(0, 0, 0, 0.404);
+    background-image: url("./images/orange-gradient-autumn-background-blurred-warm-yellow-smooth-background.jpg");
+    
 }
 header{
+
+    padding-top: 1rem;
     padding-left: 6rem;
     display: flex;
     flex-wrap: wrap;
-    /* position: sticky;
-    top:0;
-    z-index:100; */
+    
     border-bottom:  var(--border);
 }
 header h1{
+    font-size: 250%;
     display: inline-block;
     position: relative;
     color: var(--textColour);
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 20px;
     border-radius: 0 2px;
 }
 nav ul{
-
+    padding-top: 25px;
+    display: flex;
+    padding-left:23rem;
     list-style-type: none;
     display: inline-flex;
-    padding-right: 40rem;
-    list-style-type: none;
-    position: relative; 
-    padding-left: 80%;
+    text-decoration: none;
+    
     
     
 }
@@ -58,34 +63,41 @@ nav a{
     text-decoration: none;
     text-align: center;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     text-align: center;
-    box-shadow: 2px 2px 3px black;
+    box-shadow: var(--projectBoxShadow);   
+    border-radius: var(--borderRadius);
 
 }
 nav a:hover{
     background-color: var(--mainColour);
-    color: var(--textColour);
-    transition-duration: 1s;
+    color: rgb(136, 48, 48);
+    transition-duration: 0.1s;
+    text-decoration:none;
+    
 
 }
 .about{
+    margin-top: 30px;
    display: flex;
-   margin-bottom: 50px;
+   padding-bottom: 20px;
+   margin-bottom: 20px;
+   margin-right:200px
    
    
 }
 .work{
     display: flex;
     flex-wrap: wrap;
+    padding-top: 30px;
     
     
 }
 .banner{
-    background-image: url(./images/space-background2.jpg);
-    background-size: 80%;
+    background-image: url(./images/city-buildings-skyline-metropolitan-area.jpg);
     background-position-x: center;
-    background-position-y: center;
+    background-position-y: 30%;
+    background-size: 70%;
     width: 100%;
     height: 150px;
    border-bottom: var(--border);
@@ -93,47 +105,54 @@ nav a:hover{
 
 }
 .about h2{
+    font-size: var(--h2FontSize);
 position: absolute;
-padding-right:8rem;
-padding-left: 5rem;
-border-right: 5px solid ;
+padding-right:1rem;
+padding-left: 11rem;
+border-right: 5px solid var(--mainColour);
 padding-bottom: 5rem;
-color: var(--mainColour);
+
+
 }
 .work h2{
+    font-size: var(--h2FontSize);
     position: absolute;
-    padding-right:10rem;
-    padding-left: 5rem;
-    border-right: 5px solid ;
-    padding-bottom: 5rem;
-    color: var(--mainColour);
+    border-right: 5px solid var(--mainColour);
+    padding-right:1rem;
+    padding-left: 14.8rem;
+    padding-bottom: 20rem;
+    
 }
 
 
 #about p{
-    display: flex;
-    padding-left:31%; 
-    width: 40.7rem;   
+    
+    width: auto;
+    margin-left: 30rem;
+    font-size: var(--bodyFontSize)  
 }
 .projects{
     display: inline-flex;
     flex-wrap: wrap;
     position: relative;
-    padding-right: 10%;
+    padding-left:2rem;
+   
 }
 .mainProject{
-    background-image: url(./images/space-background2.jpg);
-    background-size: cover;
+    background-image: url(./images/street-artist-draws-colorful-vibrant-graffiti-modern-art-concept-with-city-guy-artist-applies-bright-graffiti-gray-wall.jpg);
+    background-size: var(--backgroundSize);
+    border-radius: var(--borderRadius);
     background-repeat: none;
     background-position-x: center;
-    background-position-y:60%;
-    margin: 0 auto;
+    background-position-y:40%;
     margin-left: 34.4%;
     width:40.7rem;
     height: 8rem;
     border: var(--border);
-    
-    
+    box-shadow: var(--projectBoxShadow);   
+}
+.mainProject :hover{
+    background-color: var(--projectHover);
 }
 .otherProjects{
     display:flex;
@@ -141,6 +160,8 @@ color: var(--mainColour);
     flex-direction: row;
     margin: 15px;
     margin-left: 34%;
+    
+    
     
 }
 
@@ -154,6 +175,8 @@ color: var(--mainColour);
     height: 100px;
     width: 20rem;
     border:var(--border);
+    box-shadow: var(--projectBoxShadow);
+    border-radius: var(--borderRadius);
 }
 .otherProject2{
     background-image: url(./images/3d-abstract-wave-pattern-background.jpg);
@@ -164,6 +187,8 @@ color: var(--mainColour);
     height: 100px;
     width: 20rem;
     border:var(--border);
+    box-shadow: var(--projectBoxShadow);
+    border-radius: var(--borderRadius);
 }
 .otherProject3{
     order:3;
@@ -174,6 +199,8 @@ color: var(--mainColour);
     margin: 5px;
     width: 20rem;
     border:var(--border);
+    box-shadow: var(--projectBoxShadow);
+    border-radius: var(--borderRadius);
 }
 .otherProject4{
     order: 4;
@@ -185,23 +212,82 @@ color: var(--mainColour);
     height: 100px;
     width: 20rem;
     border:var(--border);
+    box-shadow: var(--projectBoxShadow);
+    border-radius: var(--borderRadius);
 }
 footer{
     position: relative;
     color: var(--mainColour);
+    padding-bottom: 20px;
 }
 footer h2{
-    border-bottom: var(--border);
-    padding-left: 40px;
+    padding-top: 2rem;
+    border-top: var(--border);
+    padding-left: 10.5rem;
+    color: var(--textColour);
+    font-size: 28px;
+    
 }
 footer ul {
-    text-align: center;
+    margin-left: 30rem;
+    
+
 }
 footer ul li{
     display: inline-flex;
-    padding-left: 40px;
+    font-size: var(--bodyFontSize); 
     margin: 20px;
     color: var(--textColour);
+    margin-left: 4rem;
+    padding-left: 5px;
+    padding-right: 5px;
     
+}
+footer ul li:hover{
+    background-color: var(--mainColour);
+    color: var(--textColour);
+    transition-duration: 1s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+@media all and (max-width:950px) {
+    html{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    header{
+        margin-left:0;
+        padding-left: 0;
+    }
+    
+    nav ul{
+        display:flex;
+        position: sticky;
+        top:0;
+        z-index:100;
+    }
+    nav a{
+        font-size: medium;
+    }
+
+    #about h2{
+
+        padding-left: 1.9rem;
+       
+    }
+    #about p{
+        margin-left:18rem;
+    }
+    #work h2{
+ 
+        padding-left: 5.7rem;
+        
+    }
+    
+    .mainProject{
+        
+    height: 100px;
+    width: 20rem;
+    }
 }
 
