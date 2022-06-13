@@ -1,0 +1,155 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+:root{
+--slider-padding:5rem;
+}
+html{
+    min-height: 100%;
+    min-width: 100%;
+    --main-color:#4056A1;
+}
+.background::after {
+    content: "";
+    background: url(/assets/images//vecteezy_one-single-line-drawing-of-family-with-stack-of-hands_7104806.jpg);
+    background-size:contain;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+  }
+body{
+    background-color: white;
+   
+}
+header{
+    background-image:radial-gradient(#4056A1, #253979 );
+    padding: 8rem;
+    border-radius: 5px;
+    margin: 2rem 15rem 2rem;
+    color: #EFE2BA;
+    box-shadow: 2px 2px 3px 1px rgb(133, 132, 132);
+    text-align: center;
+   
+    /* transform: rotate3d(1, 1, 1, 360deg) matrix3d(1,0,0,0,0,1,10,0,1,1,1,0,100,100,1,2);
+    transition: transform 250ms ease-in-out; */
+}
+header:hover{
+   
+}
+header h1{
+    font-size: 8rem;
+    padding-bottom: 1rem;
+}
+header p{
+    padding-top: 3rem;
+    font-size: 16px;
+}
+nav ul a{
+    font-size: 2rem;
+    color: #F13C20;
+    text-decoration: none;
+    margin: 2rem;
+}
+h2{
+    font-size: 2rem;
+    text-align: center;
+}
+.header h2{
+    border-top: #4056A1 1px;
+}
+
+.about{
+    color: var(--main-color);
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    margin: 2rem 2rem 2rem;
+}
+.about p{
+    margin: 2rem 15rem 2rem;
+}
+.work{
+    background-image:radial-gradient(#4056A1, #253979 );
+    padding-bottom: 5rem;
+    border-radius: 5px;
+    margin: 2rem 2rem 2rem;
+    display:flex;
+    overflow:hidden;
+    box-shadow: 2px 2px 3px 1px rgb(133, 132, 132)
+}
+.header{
+    color: var(--main-color);
+    font-size: 32px;
+}
+.slider{
+    --slider-index:0;
+    margin-top: 5rem;
+  display: flex; 
+  flex-grow: 1;
+  transform: translateX(calc(var(--slider-index) * -100%));
+  transition: transform 250ms ease-in-out;
+  
+  
+  
+}
+
+.slider > img {
+flex: 0 0 50%;
+max-width: 25%;
+margin-right: 10px;
+aspect-ratio: 16 / 9;
+border-radius: 0.2rem;
+overflow: hidden;
+box-shadow: 2px 2px 4px 1px rgb(44, 44, 44)
+}
+
+
+.handle{
+    border:none;
+    border-radius: 0.5rem;
+    flex-grow: 0;
+    z-index: 10;
+    padding: .25rem;
+    margin-top:5rem;
+    cursor: pointer;
+    font-size: 0%;
+    transition: background-color 150ms ease-in-out;
+    
+}
+.text{
+    transition: transform 150ms ease-in-out;
+}
+.handle:hover .text{
+  transform: scale(1.2); 
+}
+
+.work:hover .handle{
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #4057a196;
+font-size: 5rem;
+text-align: center;
+color: #F13C20;
+}
+
+.left-handle{
+border-top-left-radius:0 ;
+border-bottom-left-radius: 0;
+}
+
+.right-handle{
+    border-top-right-radius:0 ;
+    border-bottom-right-radius: 0;
+    }
+    
+
+    footer{
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+
