@@ -1,155 +1,191 @@
-*, *::after, *::before{
-    box-sizing: border-box;
-}
 :root{
---slider-padding:5rem;
+    --projectWidth:400px;
+    --projectHeight:120px;
+    --padding:20px 0;
 }
-html{
-    min-height: 100%;
-    min-width: 100%;
-    --main-color:#4056A1;
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing:border-box;
 }
-.background::after {
-    content: "";
-    background: url(/assets/images//vecteezy_one-single-line-drawing-of-family-with-stack-of-hands_7104806.jpg);
-    background-size:contain;
-    opacity: 0.5;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1; 
-  }
-body{
-    background-color: white;
-   
-}
+/*----header section----------*/
 header{
-    background-image:radial-gradient(#4056A1, #253979 );
-    padding: 8rem;
-    border-radius: 5px;
-    margin: 2rem 15rem 2rem;
-    color: #EFE2BA;
-    box-shadow: 2px 2px 3px 1px rgb(133, 132, 132);
-    text-align: center;
-   
-    /* transform: rotate3d(1, 1, 1, 360deg) matrix3d(1,0,0,0,0,1,10,0,1,1,1,0,100,100,1,2);
-    transition: transform 250ms ease-in-out; */
+    display: flex;
+    width:100%;
+    font-family: 'Open Sans', sans-serif;
+    height: 120px;
+    background-color: rgb(1, 1, 131);
+    justify-content: space-between;
 }
-header:hover{
-   
-}
-header h1{
-    font-size: 8rem;
-    padding-bottom: 1rem;
-}
-header p{
-    padding-top: 3rem;
-    font-size: 16px;
-}
-nav ul a{
-    font-size: 2rem;
-    color: #F13C20;
-    text-decoration: none;
-    margin: 2rem;
-}
-h2{
-    font-size: 2rem;
-    text-align: center;
-}
-.header h2{
-    border-top: #4056A1 1px;
-}
+.title{
+    margin: 24px;
+    align-items: center;
 
-.about{
-    color: var(--main-color);
-    text-align: center;
-    font-size: 1.5rem;
-    border-radius: 25px;
-    margin: 2rem 2rem 2rem;
+    font-size:48px;
+    color: white;
 }
-.about p{
-    margin: 2rem 15rem 2rem;
+.navbar{
+    padding:20px;
 }
-.work{
-    background-image:radial-gradient(#4056A1, #253979 );
-    padding-bottom: 5rem;
-    border-radius: 5px;
-    margin: 2rem 2rem 2rem;
+.navbarText{
+    color:white;
     display:flex;
-    overflow:hidden;
-    box-shadow: 2px 2px 3px 1px rgb(133, 132, 132)
+    padding: 20px;
+ 
 }
-.header{
-    color: var(--main-color);
+a{
     font-size: 32px;
+    margin-right: 20px;
 }
-.slider{
-    --slider-index:0;
-    margin-top: 5rem;
-  display: flex; 
-  flex-grow: 1;
-  transform: translateX(calc(var(--slider-index) * -100%));
-  transition: transform 250ms ease-in-out;
-  
-  
-  
+.bannerImg{
+    width: 100%;
+    object-fit: cover;
+    height: 100px;
+   
 }
-
-.slider > img {
-flex: 0 0 50%;
-max-width: 25%;
-margin-right: 10px;
-aspect-ratio: 16 / 9;
-border-radius: 0.2rem;
-overflow: hidden;
-box-shadow: 2px 2px 4px 1px rgb(44, 44, 44)
-}
-
-
-.handle{
-    border:none;
-    border-radius: 0.5rem;
-    flex-grow: 0;
-    z-index: 10;
-    padding: .25rem;
-    margin-top:5rem;
-    cursor: pointer;
-    font-size: 0%;
-    transition: background-color 150ms ease-in-out;
+main{
+    display: flex;
     
 }
-.text{
-    transition: transform 150ms ease-in-out;
-}
-.handle:hover .text{
-  transform: scale(1.2); 
-}
-
-.work:hover .handle{
-display: flex;
-align-items: center;
-justify-content: center;
-background-color: #4057a196;
-font-size: 5rem;
-text-align: center;
-color: #F13C20;
-}
-
-.left-handle{
-border-top-left-radius:0 ;
-border-bottom-left-radius: 0;
-}
-
-.right-handle{
-    border-top-right-radius:0 ;
-    border-bottom-right-radius: 0;
-    }
+.sideContainer{
+    display:flex;
+    flex:2;
+    padding-left: 100px;
+    flex-direction: column;
+    justify-content: space-between;
     
+}
+/*----About section----------*/
+.aboutTitle{
+    flex:3;
+    font-size: 32px;
+    padding: 50px 0;
+    padding-right: 100px;
+    margin-top: 10px;
+    border-right: 5px solid black;
+}
 
-    footer{
-        padding-bottom: 1rem;
-        text-align: center;
+.contactTitle{
+    flex:2;
+    font-size: 32px;
+    padding: 50px 0;
+}
+.aboutContent{
+    font-size: 24px;
+    padding-top: 100px;
+    margin-left: 250px;
+    margin-right: 80px;
+}
+/*----Projects section----------*/
+.workTitle{
+    flex:7;
+    font-size: 32px;
+    padding: 50px;
+    margin-top: 20px ;
+    border-right: 5px solid black;
+    margin-bottom: 30px;
+    
+}
+.workContent{
+    padding-top: 200px;
+    margin-left: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+.cocktailApp{
+    -webkit-box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.71); 
+    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.71);
+    width: var(--projectWidth);
+    height: var(--projectHeight);
+  
+}
+.passwordApp{
+    -webkit-box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.71); 
+    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.71);
+    width: var(--projectWidth);
+    height: var(--projectHeight);
+}
+.quizApp{
+    -webkit-box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.71); 
+    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.71);
+    width: var(--projectWidth);
+    height: var(--projectHeight);
+}
+.weatherApp{
+    -webkit-box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.71); 
+    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.71);
+    width: var(--projectWidth);
+    height: var(--projectHeight);
+}
+.mainImg{
+    -webkit-box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.71); 
+    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.71);
+    flex:1;
+    width:820px;
+    height:120px;
+    object-fit: cover;
+}
+
+.projectCard{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*----Footer card with contact info */
+footer{
+    background-color: blue;
+    color: white;
+}
+.footerCard{
+    display: flex;
+    margin-left: 600px;
+}
+.info{
+    margin-right: 20px;
+}
+#contact{
+    color:white;
+    font-style: normal;
+}
+#contact .a{
+    color:white;
+    font-style: normal;
+}
+@media screen and (max-width: 800px) {
+   main {
+            display: flex;
+            flex-direction: column;
     }
+    .aboutContent{
+        margin:0;
+    }
+   .aboutTitle{
+        display: none;
+        padding: 0;
+        margin:0;
+    }
+    .workTitle{
+        display: none;
+        padding: 0;
+        margin:0;
+    }
+    .workContent{
+        display: block;
+        width: 300px;
+        padding: 0;
+        margin-top: 30px;
+        margin:50px;
+    }
+    .mainImg{
+        width:400px;
+    }
+.navbar{
+    display: none;
+}
+.contactTitle{
+    display:none;
+}
+}
 
+    

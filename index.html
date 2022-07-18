@@ -13,55 +13,68 @@
    
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@500&display=swap" rel="stylesheet">
 
     <title>Peter O'Callaghan - Dev</title>
 </head>
 </html>
 
-<header><h1>Web Dev Pete</h1>
-  <nav><ul>
-<a href="">About</a>
-<a href="">Work</a>
-  <a href="">Contact</a>
-    <a href="">Resume</a>
-      </ul></nav>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt corrupti quasi rem! Nam, architecto facilis quasi harum blanditiis officiis at fugit minus atque eius iste unde possimus quaerat labore reiciendis similique. Fugiat vero nulla error dolore, obcaecati sint culpa tempora explicabo beatae. Labore totam hic repellat eligendi recusandae reprehenderit non odio provident nam sit, delectus voluptas tempore sapiente iste, ut dolorem et saepe officia aliquam. Molestiae at asperiores maxime accusamus!</p>
-        </header>
-<!--     
-        <section class="about">
-          <h2>About</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore consequuntur reiciendis rem, nam, nisi sunt ut delectus perspiciatis rerum, laboriosam cumque obcaecati incidunt placeat ipsam itaque vero. Delectus reprehenderit vero rerum numquam laudantium ut magni illo provident ex inventore. Fugit est officia voluptates reprehenderit consequuntur animi porro commodi repellat eaque.</p>
-        </section> -->
+<header>
+  <h1 class="title">O'Callaghan</h1>
+  <nav class="navbar">
+    <ul class="navbarText">
+      <li><a href="#aboutTitle">About me</a></li>
+      <li><a href="#workTitle">Work</a></li>
+      <li><a href="#footer">Contact me</a></li>
+      <li><a href="assets\images\Peter_O'Callaghan_-_Front_End_DeveloperFull_Stack_Developer (1).pdf">Resume</a></li>
+    </ul>
+  </nav>
+</header>
+<section class="banner">
+  <img class="bannerImg" src="/assets/images/banner.jpg" alt="">
+</section>
+<main>
+<aside class="sideContainer">
+<div id="aboutTitle" class="aboutTitle"><h2>About me</h2></div>
+<div id="workTitle" class="workTitle"><h2>Work</h2></div>
+</aside>
+<div class="contentContainer">
+  <div class="aboutContent"><p>
+  </p></div>
+  <div class="workContent">
+    <div class="projectCard">
+      <div class="ProjectImg">
         
-        <div class="row">
-          <div class="header"><h2>Work</h2></div>
-        <section class="work">
-          <div class="handle left-handle">
-            <div class="text">&#8249;</div></div>
-          <div class="slider">
-            <img src="https://via.placeholder.com/210x150/EFE2BA?text=1" alt="">
-            <img src="https://via.placeholder.com/220x150/EFE2BA?text=2" alt="">
-            <img src="https://via.placeholder.com/230x150/EFE2BA?text=3" alt="">
-            <img src="https://via.placeholder.com/240x150/EFE2BA?text=4" alt="">
-            <img src="https://via.placeholder.com/250x150/EFE2BA?text=5" alt="">
-            <img src="https://via.placeholder.com/260x150/EFE2BA?text=6" alt="">
-            <img src="https://via.placeholder.com/270x150/EFE2BA?text=7" alt="">
-            <img src="https://via.placeholder.com/280x150/EFE2BA?text=8" alt="">
-            <img src="https://via.placeholder.com/290x150/EFE2BA?text=9" alt="">
-          </div>
-          <div class="handle right-handle"><div class="text">&#8250;</div></div>
-        </div>
-        </section>
-        <footer>
-          <div class="contact">
-            <nav>
-              <ul><a href="">Github</a>
-              <a href="">Number</a>
-            <a href="">email</a></ul>
-            </nav>
-          </div>
-          <div class="background"></div>
-        </footer>
+      
+      <a href="https://morning-reef-54412.herokuapp.com/"><img src="/assets/images/party-planner.jpg" alt="" class="mainImg"></a>
+    </div>
+      <div class="projectImg">
+      <a href="https://sarazyf.github.io/thw_week7/"><img class="cocktailApp" src="/assets/images/cocktails.jpg" alt=""> </a>
+    </div>
+      <div class="projectImg"><a href="https://peterocallaghan.github.io/Random_Password_Generator/"><img class="passwordApp" src="/assets/images/password.png" alt=""></a>
+      
+    </div>
+      <div class="projectImg">
+        <a href="https://pocall23.github.io/code_quiz/"><img class="quizApp" src="/assets/images/quiz.jpg" alt=""></a>
+      
+    </div>
+      <div class="projectImg">
+        <a href="https://pocall23.github.io/Weather-Dashboard/">  <img class="weatherApp" src="/assets/images/weather.jpg" alt=""></a>
+    
+    </div>
+    </div>
+  </div>
+</div>
+</main>
+<footer id="footer">
+  <div class="contactTitle"><h3>Contact Info</h3></div>
+  <div class="contactInfo">
+    <ul class="footerCard">
+      <li id="contact" class="info">0491 344 234</li>
+      <li id="contact" class="info">peter.ocllaghan23@outlook.com</li>
+      <li id="contact" class="info"><a href="https://github.com/pocall23">GitHub</a></li>
+    </ul>
+  </div>
+</footer>
  <script src="/assets/js/script.js"></script>
 </html>
